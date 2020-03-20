@@ -16,4 +16,13 @@ public interface IUserService {
      * @return
      */
     ServerResponse<User> login(String username, String password);
+
+    /**
+     * 注册用户
+     * @param user
+     * @return
+     */
+    ServerResponse<String> register(User user);
+
+    ServerResponse<String> checkValid(String str, String type);
 }
